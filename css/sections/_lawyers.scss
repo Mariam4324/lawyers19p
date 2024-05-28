@@ -40,6 +40,7 @@
   &__card:hover .lawyers-hidden {
     opacity: 1;
     z-index: 100;
+    cursor: url("../../img/cursor.png"), pointer;
   }
 
   &__descr {
