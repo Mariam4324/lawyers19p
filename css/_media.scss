@@ -33,6 +33,16 @@
     &__text {
       max-width: 696px;
     }
+
+    &__wrapper {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__card,
+    &-hidden {
+      max-width: 300px;
+    }
   }
 }
 
