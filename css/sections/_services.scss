@@ -1,5 +1,6 @@
 .services {
   padding: 80px 0;
+  background: #f7f7f7;
 
   &__title {
     text-align: center;
@@ -17,5 +18,106 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 120%;
+  }
+
+  &__wrapper {
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 424px));
+    gap: 24px;
+    margin-top: 48px;
+  }
+
+  &__corners {
+    transition: 0.4s all;
+  }
+
+  &-card:hover {
+    background: #4f8ff0;
+  }
+
+  &-card:hover {
+    cursor: url("../../icons/cursor_white.svg"), pointer;
+  }
+
+  &-card:hover &-card__title {
+    color: #fff;
+  }
+
+  &-card:hover &-card__text {
+    color: #fff;
+  }
+
+  &-card:hover &-card__icon path {
+    fill: #fff;
+  }
+
+  &-card {
+    position: relative;
+    max-width: 424px;
+    padding: 50px 32px;
+    background: #fff;
+    cursor: pointer;
+    transition: 0.4s all;
+
+    &__icon {
+      display: block;
+      margin: 0 auto;
+    }
+
+    &__title {
+      margin: 15px auto 0;
+      color: #222;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 800;
+    }
+
+    &__text {
+      max-width: 360px;
+      margin: 10px auto 0;
+      color: #222;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 120%;
+    }
+  }
+
+  &__btn {
+    margin: 48px auto 0;
+    color: #fff;
+    border: 2px solid #4f8ff0;
+    background: #4f8ff0;
+  }
+}
+
+@media (max-width: 1300) {
+  .services {
+    padding: 60px 0;
+
+    &__text {
+      max-width: 696px;
+    }
+  }
+}
+
+@media (max-width: 620) {
+  .services {
+    padding: 40px 0;
+
+    &__text {
+      max-width: 342px;
+      margin: 16px auto 0;
+      font-size: 14px;
+    }
+
+    &__wrapper {
+      margin-top: 27px;
+    }
+
+    &__btn {
+        margin: 27px auto 0;
+    }
   }
 }
