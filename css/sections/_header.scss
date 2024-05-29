@@ -1,0 +1,29 @@
+.header {
+  &__top {
+    min-height: 52px;
+    background: #010101;
+    padding: 17px 0;
+  }
+
+  &__contacts {
+    display: flex;
+    gap: 28px;
+    justify-content: start;
+    align-items: center;
+  }
+
+  &__btn {
+    background: transparent;
+  }
+
+  &__btn:hover &__link {
+    color: #4f8ff0;
+  }
+
+  &__link {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.4s all;
+  }
+}

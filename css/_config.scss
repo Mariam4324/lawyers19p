@@ -15,8 +15,17 @@ body {
 button {
   display: block;
   border: none;
+  cursor: pointer;
 }
 
 img {
   display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
 }
