@@ -77,6 +77,10 @@
     color: #222;
   }
 
+  &__corner {
+    border-color: #4F8FF0;
+  }
+
   &-hidden {
     position: absolute;
     opacity: 0;
