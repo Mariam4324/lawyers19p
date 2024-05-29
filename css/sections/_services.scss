@@ -21,11 +21,10 @@
   }
 
   &__wrapper {
-    margin-top: 48px;
+    margin: 48px auto 0;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 424px));
     gap: 24px;
-    margin-top: 48px;
   }
 
   &__corners {
@@ -99,6 +98,11 @@
     &__text {
       max-width: 696px;
     }
+
+    &__wrapper {
+      max-width: 696px;
+      grid-template-columns: repeat(2, 424px);
+    }
   }
 }
 
@@ -117,7 +121,7 @@
     }
 
     &__btn {
-        margin: 27px auto 0;
+      margin: 27px auto 0;
     }
   }
 }
