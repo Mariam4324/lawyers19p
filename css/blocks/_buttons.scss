@@ -1,3 +1,9 @@
+.btn:hover {
+  border: 2px solid #4f8ff0;
+  color: #4f8ff0;
+  background: #fff;
+}
+
 .btn {
   display: flex;
   justify-content: center;
@@ -7,7 +13,7 @@
   height: 49px;
   transition: 0.4s all;
 
-  &__text {
+  &-text {
     font-weight: 900;
     font-size: 14px;
     line-height: 120%;
@@ -28,10 +34,4 @@
     background: #fff;
     color: #222;
   }
-}
-
-.btn:hover {
-  border: 2px solid #4f8ff0;
-  color: #4f8ff0;
-  background: #fff;
 }
