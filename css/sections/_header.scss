@@ -48,9 +48,11 @@
   }
 
   &-bottom {
+    width: 100%;
+    position: absolute;
+    z-index: 10;
     padding: 20px 0 28px 0;
     background: rgba(1, 1, 1, 0.76);
-    min-height: 112px;
 
     &__title {
       display: flex;
@@ -110,6 +112,14 @@
     }
 
     &__nav {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .header {
+    &-top__contact_mail {
       display: none;
     }
   }
