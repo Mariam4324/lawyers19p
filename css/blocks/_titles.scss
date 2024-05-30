@@ -7,18 +7,29 @@
 }
 
 .logo-blue {
+  display: flex;
+  flex-direction: column;
   color: #4f8ff0;
   font-size: 28px;
   font-weight: 900;
   text-transform: uppercase;
 
   @media (max-width: 1300px) {
-    
+    font-size: 22px;
+  }
+
+  @media (max-width: 620px) {
+    font-size: 22px;
   }
 }
 
 .logo-white {
+  margin-top: -10px;
   color: #fff;
   font-size: 20px;
   text-transform: lowercase;
+
+  @media (max-width: 1300px) {
+    font-size: 16px;
+  }
 }

@@ -54,21 +54,6 @@
     padding: 20px 0 28px 0;
     background: rgba(1, 1, 1, 0.76);
 
-    &__title {
-      display: flex;
-      flex-direction: column;
-      color: #4f8ff0;
-      font-size: 28px;
-      font-weight: 900;
-      text-transform: uppercase;
-
-      &_white {
-        margin-top: -10px;
-        color: #fff;
-        font-size: 20px;
-        text-transform: lowercase;
-      }
-    }
 
     &__wrapper {
       display: flex;
@@ -102,14 +87,6 @@
 @media (max-width: 1300px) {
   .header-bottom {
     padding: 18px 0 19px 0;
-
-    &__title {
-      font-size: 22px;
-
-      &_white {
-        font-size: 16px;
-      }
-    }
 
     &__nav {
       display: none;
