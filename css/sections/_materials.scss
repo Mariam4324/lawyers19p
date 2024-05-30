@@ -133,5 +133,11 @@
       margin: 16px auto 0;
       font-size: 14px;
     }
+
+    &-card {
+      &__title {
+        font-size: 14px;
+      }
+    }
   }
 }
