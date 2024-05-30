@@ -3,6 +3,14 @@
   margin: 0 auto;
   padding: 0 15px;
   box-sizing: content-box;
+
+  @media (max-width: 1300px) {
+    max-width: 696px;
+  }
+
+  @media (max-width: 620px) {
+    max-width: 342px;
+  }
 }
 
 .flex-aic-sb {

@@ -23,8 +23,17 @@
   &__wrapper {
     margin: 48px auto 0;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 424px));
     gap: 24px;
+    grid-template-columns: repeat(3, minmax(250px, 424px));
+
+    @media (max-width: 1300px) {
+      grid-template-columns: repeat(2, minmax(250px, 424px));
+    }
+
+    @media (max-width: 620px) {
+      margin: 27px auto 0;
+      grid-template-columns: repeat(1, minmax(250px, 424px));
+    }
   }
 
   &__corners {
@@ -95,11 +104,6 @@
     &__text {
       max-width: 696px;
     }
-
-    &__wrapper {
-      max-width: 696px;
-      grid-template-columns: repeat(2, 424px);
-    }
   }
 }
 
@@ -111,10 +115,6 @@
       max-width: 342px;
       margin: 16px auto 0;
       font-size: 14px;
-    }
-
-    &__wrapper {
-      margin-top: 27px;
     }
 
     &__btn {

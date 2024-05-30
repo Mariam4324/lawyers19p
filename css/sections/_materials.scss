@@ -23,8 +23,18 @@
   &__wrapper {
     margin: 48px auto 0;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 424px));
+    grid-template-columns: repeat(3, minmax(424px, 1fr));
     gap: 24px;
+
+    @media (max-width: 1300px) {
+      margin: 29px auto 0;
+      grid-template-columns: repeat(1, minmax(336px, 424px));
+    }
+
+    @media (max-width: 620px) {
+      margin: 49px auto 0;
+      grid-template-columns: repeat(1, minmax(250px, 250px));
+    }
   }
 
   &-card:hover &-card__corners {
@@ -70,6 +80,10 @@
       position: absolute;
       background: rgba(79, 143, 240, 0.4);
       transition: 0.4s all;
+
+      @media (max-width: 620px) {
+        height: 159px;
+      }
     }
 
     &__corners {

@@ -30,10 +30,19 @@
   }
 
   &__wrapper {
-    display: flex;
-    justify-content: space-between;
+    margin: 48px auto 0;
+    display: grid;
     gap: 24px;
-    margin-top: 48px;
+    grid-template-columns: repeat(4, minmax(250px, 424px));
+
+    @media (max-width: 1300px) {
+      grid-template-columns: repeat(2, minmax(250px, 424px));
+    }
+
+    @media (max-width: 620px) {
+      margin: 36px auto 0;
+      grid-template-columns: repeat(1, minmax(250px, 424px));
+    }
   }
 
   &__card {

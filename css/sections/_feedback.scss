@@ -4,11 +4,19 @@
   padding: 80px 0;
 
   &__wrapper {
-    margin-top: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    margin: 48px auto 0;
+    display: grid;
     gap: 24px;
+    grid-template-columns: repeat(2, minmax(340px, 648px));
+
+    @media (max-width: 1300px) {
+      grid-template-columns: repeat(1, minmax(576px, 648px));
+    }
+
+    @media (max-width: 620px) {
+      margin: 27px auto 0;
+      grid-template-columns: repeat(1, minmax(340px, 648px));
+    }
   }
 
   &__card {
@@ -21,6 +29,7 @@
   &__person {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   &__left {
