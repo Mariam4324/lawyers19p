@@ -5,3 +5,20 @@
   text-transform: uppercase;
   color: #222;
 }
+
+.logo-blue {
+  color: #4f8ff0;
+  font-size: 28px;
+  font-weight: 900;
+  text-transform: uppercase;
+
+  @media (max-width: 1300px) {
+    
+  }
+}
+
+.logo-white {
+  color: #fff;
+  font-size: 20px;
+  text-transform: lowercase;
+}
