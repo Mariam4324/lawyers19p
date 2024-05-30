@@ -1,37 +1,32 @@
-.btn:hover {
+.btn-blue {
   border: 2px solid #4f8ff0;
-  color: #4f8ff0;
-  background: #fff;
-}
-
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
   padding: 16px 24px;
-  height: 49px;
+  background: #4f8ff0;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
   transition: 0.4s all;
 
-  &-text {
-    font-weight: 900;
-    font-size: 14px;
-    line-height: 120%;
-    text-transform: uppercase;
-    text-align: center;
-  }
-
-  &-gray {
-    border: 2px solid #e6e6e6;
-    width: max-content;
-    height: 49px;
-    background: #e6e6e6;
-    color: #222;
-  }
-
-  &-gray:hover {
-    border: 2px solid #e6e6e6;
+  &:hover {
+    color: #4f8ff0;
     background: #fff;
-    color: #222;
+  }
+}
+
+.btn-gray {
+  color: #222;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 2px solid #e6e6e6;
+  background: #e6e6e6;
+  padding: 16px 24px;
+  transition: 0.4s all;
+
+  &:hover {
+    background: #fff;
   }
 }

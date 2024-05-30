@@ -8,12 +8,16 @@
     justify-content: space-between;
   }
 
-  &__title {
-    color: #222;
+  &__title_blue {
+    font-weight: 900;
+    color: #4f8ff0;
 
-    &_blue {
-      font-weight: 900;
-      color: #4f8ff0;
+    @media (max-width: 1300px) {
+      font-size: 24px;
+    }
+
+    @media (max-width: 620px) {
+      font-size: 20px;
     }
   }
 
@@ -46,9 +50,6 @@
 
   &__btn {
     border: 2px solid #4f8ff0;
-    width: max-content;
-    background: #4f8ff0;
-    color: #fff;
   }
 
   &__picture {

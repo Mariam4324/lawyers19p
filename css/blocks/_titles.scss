@@ -1,9 +1,16 @@
 .title {
   font-weight: 800;
   font-size: 28px;
-  line-height: 150%;
   text-transform: uppercase;
   color: #222;
+
+  @media (max-width: 1300px) {
+    font-size: 24px;
+  }
+
+  @media (max-width: 620px) {
+    font-size: 20px;
+  }
 }
 
 .logo-blue {
