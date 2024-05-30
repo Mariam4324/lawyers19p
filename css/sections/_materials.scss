@@ -26,8 +26,31 @@
     grid-template-columns: repeat(auto-fill, minmax(250px, 424px));
   }
 
+  &-card:hover &-card__corners {
+    opacity: 1;
+  }
+
+  &-card:hover .materials-card__pic {
+   background: rgba(79, 143, 240, 0.40);
+  }
+
   &-card {
     cursor: pointer;
+
+    &__top {
+      position: relative;
+    }
+
+    &
+
+    &__pic {
+      transition: 0.4s all;
+    }
+
+    &__corners {
+      opacity: 0;
+      transition: 0.4s all;
+    }
 
     &__descr {
       max-width: 424px;
@@ -57,6 +80,8 @@
       line-height: 120%;
     }
   }
+
+  
 }
 
 @media (max-width: 1300px) {
