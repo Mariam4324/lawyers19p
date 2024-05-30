@@ -4,11 +4,6 @@
     background: #010101;
     padding: 17px 0;
 
-    &__wrapper {
-      display: flex;
-      justify-content: space-between;
-    }
-
     &__contacts {
       display: flex;
       gap: 28px;
@@ -17,9 +12,6 @@
     }
 
     &__contact {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       gap: 8px;
     }
 
@@ -54,17 +46,7 @@
     padding: 20px 0 28px 0;
     background: rgba(1, 1, 1, 0.76);
 
-
-    &__wrapper {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
     &__list {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       gap: 32px;
     }
 
