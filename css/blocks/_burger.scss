@@ -1,0 +1,31 @@
+.burger {
+  position: relative;
+  display: none;
+
+  @media (max-width: 620px) {
+    display: flex;
+  }
+
+  &__open,
+  &__close {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__open {
+    position: absolute;
+    z-index: 20;
+  }
+
+  &__checkbox {
+    opacity: 0;
+  }
+
+  &__overlay {
+    display: none;
+    transform: translateX(100%);
+    width: 100vw;
+    height: 100vh;
+    background: #222;
+  }
+}

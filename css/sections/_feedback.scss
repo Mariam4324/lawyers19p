@@ -3,6 +3,24 @@
   min-height: 588px;
   padding: 80px 0;
 
+  @media (max-width: 620px) {
+    padding: 40px 0;
+
+    &__wrapper {
+      margin-top: 24px;
+    }
+
+    &__icon {
+      display: none;
+    }
+
+    &__btns {
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+  }
+
   &__wrapper {
     margin: 48px auto 0;
     display: grid;
